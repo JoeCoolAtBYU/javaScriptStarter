@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <% if (htmlWebpackPllugin.options.trackJSToken) {%>
+  <!--Add JS error logging via TrackJS or some other servcice.-->
+  <!--token: ' <%=htmlWebpackPllugin.options.trackJSToken)%>'<-->
+  <% } %>
   <meta charset="UTF-8">
 </head>
 <body>
